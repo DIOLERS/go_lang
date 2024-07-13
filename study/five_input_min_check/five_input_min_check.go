@@ -20,7 +20,10 @@ func main() {
 		sc.Scan()
 		num[i], _ = strconv.Atoi(sc.Text())
 		name[i] = sc.Text()
-		if(mnum > num[i]){
+		if(i==0){
+			mnum = num[i]
+		}
+		else if(mnum > num[i]){
 		mnum = num[i]
 		}
 	}
